@@ -56,25 +56,25 @@ export default function About() {
           <div>
             <Reveal delay={0.2}>
               <p className="font-body font-light text-ink-200 leading-relaxed mb-8" style={{ fontSize: '1.05rem' }}>
-                I'm Quentin, a business analyst based in New Jersey. I work on supply chain and operations
-                across the U.S. and Asia, where the challenge is usually the same: too much complexity,
+                I'm Quentin, a business analyst based in New Jersey. I work in supply chain and operations
+                across the U.S. and Asia, where the problem is almost always the same: too much going on,
                 not enough clarity.
               </p>
             </Reveal>
 
             <Reveal delay={0.3}>
               <p className="font-body font-light text-ink-300 leading-relaxed mb-10" style={{ fontSize: '0.95rem', lineHeight: 1.85 }}>
-                At A.I. Technology, I work across manufacturing operations in the U.S. and Asia. That means
-                working with suppliers, tracking materials, and helping the business make smarter sourcing
-                decisions.
+                At A.I. Technology, I support manufacturing operations across the U.S. and Asia. Day to day,
+                that means working with suppliers, managing material flows, and helping the team make
+                smarter sourcing calls.
               </p>
             </Reveal>
 
             <Reveal delay={0.35}>
               <p className="font-body font-light text-ink-300 leading-relaxed mb-14" style={{ fontSize: '0.95rem', lineHeight: 1.85 }}>
-                Before that, I built supplier evaluation systems at a startup and spent over a year at Bosch
-                working on order operations and analytics. Fluent in English and Mandarin Chinese, I'm
-                comfortable working across cultures and time zones.
+                Before that, I built supplier evaluation infrastructure at a startup and spent over a year
+                at Bosch on order operations and analytics. I speak English and Mandarin Chinese, which
+                helps when the work spans continents.
               </p>
             </Reveal>
 

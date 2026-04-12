@@ -25,7 +25,7 @@ const projects = [
     category: 'Operations',
     year: '2026',
     description:
-      'Working across U.S. and Asian manufacturing facilities, I help keep materials moving and suppliers aligned. The work ranges from sourcing analysis to logistics coordination — the kind of day-to-day operations that keep production on track.',
+      'Working across U.S. and Asian manufacturing facilities, I help keep materials moving and suppliers aligned. It covers everything from sourcing analysis to logistics coordination, the kind of daily work that keeps production running.',
     outcomes: ['Cross-border supplier coordination', 'Inventory planning support', 'Raw material logistics'],
     tags: ['Supply Chain', 'Global Ops', 'Logistics'],
   },

@@ -50,7 +50,7 @@ export default function Hero() {
         </div>
 
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.9 }} className="font-body font-light text-ink-200 mb-14 max-w-lg mx-auto" style={{ fontSize: '1.05rem', lineHeight: 1.75 }}>
-          Supply chain and operations, grounded in data.<br />
+          Supply chain, operations, and the data connecting them.<br />
           Based in New Jersey, working across the U.S. and Asia.
         </motion.p>
 
