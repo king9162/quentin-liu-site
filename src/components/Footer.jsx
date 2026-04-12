@@ -10,7 +10,7 @@ export default function Footer() {
         </div>
 
         <div className="font-mono text-[8px] tracking-widest3 uppercase text-ink-600 text-center">
-          Business Analyst · Supply Chain · Operations · New Jersey, US
+          Business Analyst · Supply Chain · Strategy · New Jersey, US
         </div>
 
         <div className="font-mono text-[8px] tracking-widest text-ink-700">

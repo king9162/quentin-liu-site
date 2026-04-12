@@ -87,7 +87,7 @@ export default function Work() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
           <Reveal>
             <h2
-              className="font-display font-light text-cream leading-tight whitespace-nowrap"
+              className="font-display font-light text-cream leading-tight lg:whitespace-nowrap"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
             >
               Work that <em className="text-gold-gradient">made a difference.</em>

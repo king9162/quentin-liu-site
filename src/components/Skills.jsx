@@ -35,35 +35,12 @@ const skillCategories = [
   },
 ];
 
-const proficiencies = [
-  { name: 'Business Analysis', level: 92 },
-  { name: 'Supply Chain Operations', level: 88 },
-  { name: 'Power BI', level: 85 },
-  { name: 'Market Analysis', level: 83 },
-  { name: 'SAP ERP', level: 78 },
-  { name: 'Data Analytics', level: 80 },
+const principles = [
+  'Clear frameworks over complex ones',
+  'Data to inform decisions, not to impress',
+  'Comfortable across cultures and time zones',
+  'Equally at home in strategy and execution',
 ];
-
-function Bar({ name, level, delay }) {
-  const { ref, isInView } = useScrollReveal();
-  return (
-    <div ref={ref} className="group">
-      <div className="flex justify-between mb-2">
-        <span className="font-body text-sm text-ink-200 group-hover:text-ink-50 transition-colors duration-300">{name}</span>
-        <span className="font-mono text-[9px] tracking-widest text-ink-500">{level}%</span>
-      </div>
-      <div className="h-px bg-ink-700 relative overflow-hidden">
-        <motion.div
-          initial={{ scaleX: 0 }}
-          animate={isInView ? { scaleX: level / 100 } : {}}
-          transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: delay + 0.2 }}
-          className="absolute inset-0 origin-left"
-          style={{ background: 'linear-gradient(90deg, #8a7248, #b89d6a, #d4bc8e)' }}
-        />
-      </div>
-    </div>
-  );
-}
 
 export default function Skills() {
   return (
@@ -122,27 +99,26 @@ export default function Skills() {
             ))}
           </div>
 
-          {/* Proficiency bars */}
+          {/* Right: principles + core tools */}
           <div>
             <Reveal>
-              <div className="font-mono text-[9px] tracking-widest3 uppercase text-ink-500 mb-10">
-                Proficiency Overview
+              <div className="font-mono text-[9px] tracking-widest3 uppercase text-ink-500 mb-8">How I Work</div>
+              <div className="space-y-5 mb-16">
+                {principles.map((item, i) => (
+                  <div key={i} className="flex items-start gap-4">
+                    <div className="mt-2 w-1 h-1 rounded-full bg-gold flex-shrink-0" />
+                    <span className="font-body text-sm text-ink-300 leading-relaxed">{item}</span>
+                  </div>
+                ))}
               </div>
             </Reveal>
-            <div className="space-y-8">
-              {proficiencies.map((item, i) => (
-                <Bar key={item.name} name={item.name} level={item.level} delay={i * 0.07} />
-              ))}
-            </div>
 
-            {/* Divider */}
-            <div className="my-14 h-px bg-ink-800" />
+            <div className="h-px bg-ink-800 mb-14" />
 
-            {/* Tools highlight */}
-            <Reveal delay={0.3}>
+            <Reveal delay={0.2}>
               <div className="font-mono text-[9px] tracking-widest3 uppercase text-ink-500 mb-8">Core Tools</div>
               <div className="grid grid-cols-3 gap-px bg-ink-800">
-                {['Power BI', 'SAP ERP', 'Excel', 'Dashboard\nDesign', 'Data\nAnalysis', 'SQL\nAwareness'].map((tool, i) => (
+                {['Power BI', 'SAP ERP', 'Excel', 'Dashboard\nDesign', 'Data\nAnalysis', 'SQL'].map((tool) => (
                   <motion.div
                     key={tool}
                     whileHover={{ backgroundColor: '#141414' }}

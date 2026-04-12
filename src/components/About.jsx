@@ -44,7 +44,7 @@ export default function About() {
 
         <Reveal delay={0.1}>
           <h2
-            className="font-display font-light text-cream leading-tight mb-16 whitespace-nowrap"
+            className="font-display font-light text-cream leading-tight mb-16 lg:whitespace-nowrap"
             style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
           >
             Thinking clearly, <em className="text-gold-gradient">moving decisively.</em>
