@@ -93,7 +93,7 @@ export default function About() {
           </div>
 
           {/* Right: Stats + detail */}
-          <div className="lg:mt-12">
+          <div className="lg:mt-32">
             {/* Stats grid */}
             <div className="grid grid-cols-2 gap-px bg-ink-700 mb-16">
               {stats.map((stat, i) => (
