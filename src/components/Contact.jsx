@@ -56,7 +56,7 @@ export default function Contact() {
 
         <Reveal delay={0.15}>
           <p className="font-body font-light text-ink-300 text-base leading-relaxed mb-20 max-w-lg">
-            I'm open to new roles and good conversations. If something resonates, feel free to reach out.
+            Open to new roles and good conversations. Feel free to reach out.
           </p>
         </Reveal>
 
