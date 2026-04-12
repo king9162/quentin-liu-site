@@ -88,9 +88,9 @@ export default function Skills() {
             className="font-display font-light text-cream leading-tight mb-24"
             style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
           >
-            Built to operate
+            The tools and thinking
             <br />
-            <em className="text-gold-gradient">at every level.</em>
+            <em className="text-gold-gradient">behind the work.</em>
           </h2>
         </Reveal>
 

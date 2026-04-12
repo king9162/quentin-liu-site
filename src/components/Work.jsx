@@ -20,13 +20,13 @@ function Reveal({ children, delay = 0, className = '' }) {
 const projects = [
   {
     number: '001',
-    title: 'Global Manufacturing & Supply Coordination',
+    title: 'Manufacturing & Supply Coordination',
     company: 'A.I. Technology, Inc.',
     category: 'Operations',
     year: '2026',
     description:
-      'Orchestrated cross-border supply chain operations connecting U.S. and Asian manufacturing facilities. Built systematic frameworks for supplier analysis, inventory coordination, and raw material planning at global scale.',
-    outcomes: ['Multi-continent supplier network', 'Inventory planning systems', 'Logistics workflow design'],
+      'Working across U.S. and Asian manufacturing facilities, I help keep materials moving and suppliers aligned. The work ranges from sourcing analysis to logistics coordination — the kind of day-to-day operations that keep production on track.',
+    outcomes: ['Cross-border supplier coordination', 'Inventory planning support', 'Raw material logistics'],
     tags: ['Supply Chain', 'Global Ops', 'Logistics'],
   },
   {
@@ -36,8 +36,8 @@ const projects = [
     category: 'Procurement',
     year: '2025',
     description:
-      'Designed and executed a structured supplier evaluation program for a new product development initiative. Built decision-making infrastructure from the ground up — spanning MOQ benchmarking, cost analysis, compliance review, and lead time optimization.',
-    outcomes: ['Evaluation framework built', 'Multi-supplier comparison', 'Decision trackers deployed'],
+      'When the team needed a supplier for a new product, there was no existing process. I built it from scratch: defined what to look for, compared candidates across cost and compliance, and created trackers that made the decision clear and easy to document.',
+    outcomes: ['Evaluation framework created', 'Supplier comparison built', 'Decision documentation in place'],
     tags: ['Sourcing', 'Feasibility', 'Procurement'],
   },
   {
@@ -47,8 +47,8 @@ const projects = [
     category: 'Analytics',
     year: '2022–23',
     description:
-      'Engineered a comprehensive Power BI analytics suite to monitor order accuracy and fulfillment KPIs across global sales channels. The dashboard became the operational nerve center — eliminating manual error tracking and delivering real-time visibility to cross-functional teams.',
-    outcomes: ['43% error reduction', '15% fulfillment improvement', 'Real-time KPI monitoring'],
+      'Built a set of Power BI dashboards to track order accuracy and fulfillment across global sales channels. The goal was simple: give the team visibility they didn\'t have before and reduce the manual effort of catching errors after the fact.',
+    outcomes: ['Real-time order visibility', 'Reduced manual tracking', 'KPI monitoring across channels'],
     tags: ['Power BI', 'SAP', 'Data Analytics'],
   },
   {
@@ -58,8 +58,8 @@ const projects = [
     category: 'Strategy',
     year: '2026',
     description:
-      'Led customer segmentation and market analysis to optimize targeting strategy for industrial trade show participation. Synthesized competitive landscape data and buyer personas to direct sales and marketing resources toward highest-value opportunities.',
-    outcomes: ['Customer segmentation model', 'Competitive landscape mapping', 'Sales targeting strategy'],
+      'To make trade show participation worthwhile, I worked on understanding the customer landscape: who the buyers are, what they care about, and where to focus. The research helped the team go in with a clearer picture of who they were talking to.',
+    outcomes: ['Customer segmentation', 'Competitive landscape research', 'Sales focus refined'],
     tags: ['Market Analysis', 'Segmentation', 'Strategy'],
   },
 ];
@@ -90,15 +90,15 @@ export default function Work() {
               className="font-display font-light text-cream leading-tight"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
             >
-              Projects that
+              Work that
               <br />
-              <em className="text-gold-gradient">moved the needle.</em>
+              <em className="text-gold-gradient">made a difference.</em>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="font-body font-light text-ink-300 text-sm leading-relaxed self-end">
-              A curated selection of high-impact work — from building analytics infrastructure at Bosch to 
-              coordinating global supply chains across two continents.
+              A selection of work from the past few years, from building analytics at Bosch to
+              coordinating supply chains across two continents.
             </p>
           </Reveal>
         </div>

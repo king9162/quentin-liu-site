@@ -50,16 +50,15 @@ export default function Contact() {
             className="font-display font-light text-cream leading-tight mb-8"
             style={{ fontSize: 'clamp(3rem, 8vw, 7rem)', letterSpacing: '-0.03em' }}
           >
-            Let's build
+            Let's
             <br />
-            <em className="text-gold-gradient">something together.</em>
+            <em className="text-gold-gradient">connect.</em>
           </h2>
         </Reveal>
 
         <Reveal delay={0.15}>
           <p className="font-body font-light text-ink-300 text-base leading-relaxed mb-20 max-w-lg">
-            Whether you're looking for a sharp analyst to join your team, or a collaborator who can 
-            translate complex data into operational decisions — I'd be glad to connect.
+            Open to new opportunities and interesting conversations. If you think there's a fit, reach out anytime.
           </p>
         </Reveal>
 

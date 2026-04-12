@@ -19,7 +19,7 @@ function Reveal({ children, delay = 0, className = '' }) {
 
 const stats = [
   { value: '3+', label: 'Years Experience' },
-  { value: '43%', label: 'Error Reduction' },
+  { value: '2', label: 'Languages' },
   { value: '2', label: 'Continents' },
   { value: 'M.S.', label: 'Supply Chain Analytics' },
 ];
@@ -50,34 +50,33 @@ export default function About() {
                 className="font-display font-light text-cream leading-tight mb-10"
                 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
               >
-                Where analysis
+                Thinking clearly,
                 <br />
-                <em className="text-gold-gradient">meets execution.</em>
+                <em className="text-gold-gradient">moving decisively.</em>
               </h2>
             </Reveal>
 
             <Reveal delay={0.2}>
               <p className="font-body font-light text-ink-200 leading-relaxed mb-8" style={{ fontSize: '1.05rem' }}>
-                I'm Quentin Liu — a Business Analyst operating at the intersection of supply chain strategy, 
-                operational execution, and data-driven decision making. Based in New Jersey, working globally.
+                I'm Quentin, a business analyst based in New Jersey. I work on supply chain and operations
+                across the U.S. and Asia, where the challenge is usually the same: too much complexity,
+                not enough clarity.
               </p>
             </Reveal>
 
             <Reveal delay={0.3}>
               <p className="font-body font-light text-ink-300 leading-relaxed mb-10" style={{ fontSize: '0.95rem', lineHeight: 1.85 }}>
-                At A.I. Technology, I coordinate across manufacturing operations spanning the U.S. and Asia — 
-                analyzing supplier ecosystems, orchestrating raw material logistics, and shaping market strategy 
-                for industrial trade shows. My work bridges the gap between operational complexity and clean, 
-                actionable intelligence.
+                At A.I. Technology, I work across manufacturing operations in the U.S. and Asia. That means
+                working with suppliers, tracking materials, and helping the business make smarter sourcing
+                decisions.
               </p>
             </Reveal>
 
             <Reveal delay={0.35}>
               <p className="font-body font-light text-ink-300 leading-relaxed mb-14" style={{ fontSize: '0.95rem', lineHeight: 1.85 }}>
-                My background spans Power BI dashboards that reduced processing errors by 43%, 
-                supplier feasibility frameworks built from scratch, and SAP-driven order operations 
-                across global sales channels. Fluent in English and Mandarin Chinese — I work 
-                seamlessly across cultures and time zones.
+                Before that, I built supplier evaluation systems at a startup and spent over a year at Bosch
+                working on order operations and analytics. Fluent in English and Mandarin Chinese, I'm
+                comfortable working across cultures and time zones.
               </p>
             </Reveal>
 

@@ -25,13 +25,13 @@ const experiences = [
     period: 'Jan 2026 — Present',
     location: 'United States & Asia',
     type: 'Full-time',
-    summary: 'Driving global manufacturing operations and cross-functional business strategy.',
+    summary: 'Supporting manufacturing operations and sourcing decisions across the U.S. and Asia.',
     points: [
-      'Support global manufacturing operations spanning the U.S. and Asia',
-      'Analyze supplier cost, lead time, and availability to optimize sourcing decisions',
-      'Coordinate raw material logistics and inventory planning workflows',
-      'Lead market analysis and customer targeting for industrial trade shows',
-      'Collaborate across operations, sales, and production functions',
+      'Work across manufacturing operations in the U.S. and Asia',
+      'Analyze supplier costs, lead times, and availability to guide sourcing decisions',
+      'Coordinate raw material logistics and inventory planning',
+      'Lead market research and customer targeting for industrial trade shows',
+      'Work closely with operations, sales, and production teams',
     ],
   },
   {
@@ -41,11 +41,11 @@ const experiences = [
     period: 'Jun 2025 — Aug 2025',
     location: 'United States',
     type: 'Internship',
-    summary: 'Built supplier evaluation infrastructure for new product development.',
+    summary: 'Built a supplier evaluation process for a new product line from the ground up.',
     points: [
-      'Led supplier sourcing and feasibility analysis for functional beverage ingredients',
-      'Benchmarked suppliers across MOQ, cost, compliance, and lead time dimensions',
-      'Designed and built supplier evaluation trackers to drive structured decision-making',
+      'Led supplier sourcing for functional beverage ingredients',
+      'Compared suppliers across cost, compliance, MOQ, and lead time',
+      'Built evaluation trackers to keep decisions structured and documented',
     ],
   },
   {
@@ -55,13 +55,12 @@ const experiences = [
     period: 'May 2022 — Nov 2023',
     location: 'Europe / Asia',
     type: 'Internship',
-    summary: 'Delivered measurable operational improvements through data and process engineering.',
+    summary: 'Worked on order operations and analytics across global sales channels.',
     points: [
-      'Analyzed sales and order operation data to identify process bottlenecks',
-      'Built Power BI dashboards monitoring order accuracy and fulfillment KPIs',
-      'Reduced processing errors by 43% and improved fulfillment efficiency by 15%',
-      'Operated SAP ERP for order management and multi-channel tracking',
-      'Coordinated cross-functionally across sales, planning, and logistics teams',
+      'Analyzed sales and order data to identify process inefficiencies',
+      'Built Power BI dashboards to track order accuracy and fulfillment',
+      'Used SAP ERP for order management across multiple sales channels',
+      'Coordinated with sales, planning, and logistics teams on day-to-day operations',
     ],
   },
 ];
@@ -92,9 +91,9 @@ export default function Experience() {
               className="font-display font-light text-cream leading-tight"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
             >
-              A record of
+              Where I've
               <br />
-              <em className="text-gold-gradient">deliberate impact.</em>
+              <em className="text-gold-gradient">done the work.</em>
             </h2>
           </Reveal>
         </div>
