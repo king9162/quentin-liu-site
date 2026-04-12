@@ -26,7 +26,7 @@ const education = [
     location: 'New Jersey, USA',
   },
   {
-    degree: 'B.A. Business — International Business',
+    degree: 'B.A. International Business',
     school: 'Tunghai University',
     period: 'Sep 2019 — Jun 2023',
     detail: 'Undergraduate study in international business, global commerce, and cross-cultural management.',
@@ -53,10 +53,10 @@ export default function Education() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-px bg-ink-800">
           {education.map((edu, i) => (
-            <Reveal key={edu.school} delay={i * 0.12}>
+            <Reveal key={edu.school} delay={i * 0.12} className="h-full">
               <motion.div
                 whileHover={{ backgroundColor: '#0e0e0e' }}
-                className="bg-ink-950 p-12 lg:p-16 group transition-colors duration-500 relative overflow-hidden"
+                className="h-full bg-ink-950 p-12 lg:p-16 group transition-colors duration-500 relative overflow-hidden"
               >
                 <motion.div
                   initial={{ opacity: 0 }}
