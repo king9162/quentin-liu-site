@@ -1,12 +1,13 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useMotionValue, useSpring } from 'framer-motion';
 
-export default function Cursor() {
+const isTouchDevice = typeof window !== 'undefined' && window.matchMedia('(hover: none)').matches;
+
+function CursorInner() {
   const cursorX = useMotionValue(-100);
   const cursorY = useMotionValue(-100);
   const trailX = useSpring(cursorX, { stiffness: 80, damping: 20 });
   const trailY = useSpring(cursorY, { stiffness: 80, damping: 20 });
-  const isHovering = useRef(false);
   const dotRef = useRef(null);
   const ringRef = useRef(null);
 
@@ -41,7 +42,6 @@ export default function Cursor() {
 
   return (
     <>
-      {/* Dot */}
       <motion.div
         ref={dotRef}
         className="fixed top-0 left-0 z-[9999] pointer-events-none"
@@ -56,11 +56,9 @@ export default function Cursor() {
             transform: 'translate(-50%, -50%)',
             transition: 'transform 0.2s cubic-bezier(0.16,1,0.3,1)',
           }}
-          ref={dotRef}
         />
       </motion.div>
 
-      {/* Ring */}
       <motion.div
         ref={ringRef}
         className="fixed top-0 left-0 z-[9998] pointer-events-none"
@@ -75,9 +73,13 @@ export default function Cursor() {
             transform: 'translate(-50%, -50%)',
             transition: 'transform 0.4s cubic-bezier(0.16,1,0.3,1)',
           }}
-          ref={ringRef}
         />
       </motion.div>
     </>
   );
+}
+
+export default function Cursor() {
+  if (isTouchDevice) return null;
+  return <CursorInner />;
 }

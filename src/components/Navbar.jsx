@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useNavScroll } from '../hooks/useNavScroll';
+import { useActiveSection } from '../hooks/useActiveSection';
 
 const navLinks = [
   { label: 'About', href: '#about' },
@@ -13,6 +14,7 @@ const navLinks = [
 export default function Navbar() {
   const { scrolled } = useNavScroll();
   const [menuOpen, setMenuOpen] = useState(false);
+  const activeSection = useActiveSection(['about', 'experience', 'work', 'skills', 'contact']);
 
   const scrollTo = (href) => {
     setMenuOpen(false);
@@ -45,16 +47,20 @@ export default function Navbar() {
 
           {/* Desktop links */}
           <div className="hidden md:flex items-center gap-10">
-            {navLinks.map((link, i) => (
-              <button
-                key={link.href}
-                onClick={() => scrollTo(link.href)}
-                className="font-body text-xs tracking-widest2 uppercase text-ink-300 hover:text-ink-50 transition-colors duration-300 relative group"
-              >
-                {link.label}
-                <span className="absolute -bottom-0.5 left-0 w-0 h-px bg-gold transition-all duration-300 group-hover:w-full" />
-              </button>
-            ))}
+            {navLinks.map((link) => {
+              const id = link.href.replace('#', '');
+              const isActive = activeSection === id;
+              return (
+                <button
+                  key={link.href}
+                  onClick={() => scrollTo(link.href)}
+                  className={`font-body text-xs tracking-widest2 uppercase transition-colors duration-300 relative group ${isActive ? 'text-gold' : 'text-ink-300 hover:text-ink-50'}`}
+                >
+                  {link.label}
+                  <span className={`absolute -bottom-0.5 left-0 h-px bg-gold transition-all duration-300 ${isActive ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+                </button>
+              );
+            })}
           </div>
 
           {/* CTA */}
