@@ -89,7 +89,7 @@ export default function Experience() {
           <Reveal>
             <h2
               className="font-display font-light text-cream leading-tight whitespace-nowrap"
-              style={{ fontSize: 'clamp(1.4rem, 2.6vw, 2.2rem)', letterSpacing: '-0.02em' }}
+              style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
             >
               Where I've <em className="text-gold-gradient">done the work.</em>
             </h2>
