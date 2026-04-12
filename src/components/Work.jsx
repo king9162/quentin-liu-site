@@ -87,14 +87,14 @@ export default function Work() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-24">
           <Reveal>
             <h2
-              className="font-display font-light text-cream leading-tight"
-              style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
+              className="font-display font-light text-cream leading-tight whitespace-nowrap"
+              style={{ fontSize: 'clamp(1.4rem, 2.6vw, 2.2rem)', letterSpacing: '-0.02em' }}
             >
               Work that <em className="text-gold-gradient">made a difference.</em>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
-            <p className="font-body font-light text-ink-300 text-sm leading-relaxed self-end">
+            <p className="font-body font-light text-ink-300 text-sm leading-relaxed self-end lg:mt-12">
               A selection of work from the past few years, from building analytics at Bosch to
               coordinating supply chains across two continents.
             </p>

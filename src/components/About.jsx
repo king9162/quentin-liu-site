@@ -47,12 +47,10 @@ export default function About() {
           <div>
             <Reveal delay={0.1}>
               <h2
-                className="font-display font-light text-cream leading-tight mb-10"
-                style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
+                className="font-display font-light text-cream leading-tight mb-10 whitespace-nowrap"
+                style={{ fontSize: 'clamp(1.4rem, 2.6vw, 2.2rem)', letterSpacing: '-0.02em' }}
               >
-                Thinking clearly,
-                <br />
-                <em className="text-gold-gradient">moving decisively.</em>
+                Thinking clearly, <em className="text-gold-gradient">moving decisively.</em>
               </h2>
             </Reveal>
 
@@ -95,7 +93,7 @@ export default function About() {
           </div>
 
           {/* Right: Stats + detail */}
-          <div>
+          <div className="lg:mt-12">
             {/* Stats grid */}
             <div className="grid grid-cols-2 gap-px bg-ink-700 mb-16">
               {stats.map((stat, i) => (
