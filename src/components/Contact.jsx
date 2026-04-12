@@ -60,29 +60,35 @@ export default function Contact() {
           </p>
         </Reveal>
 
-        {/* Contact items — horizontal row */}
-        <Reveal delay={0.1}>
-          <div className="flex flex-wrap gap-x-14 gap-y-10 border-t border-ink-700 pt-12 mb-16">
-            {contactLinks.map((item) => (
-              <div key={item.label}>
-                <div className="font-mono text-xs tracking-widest2 uppercase text-ink-500 mb-2">{item.label}</div>
+        {/* Contact grid */}
+        <div className="border-t border-ink-700">
+          {contactLinks.map((item, i) => (
+            <Reveal key={item.label} delay={i * 0.08}>
+              <div className="border-b border-ink-800 py-7 grid grid-cols-3 items-center group">
+                <span className="font-mono text-xs tracking-widest2 uppercase text-ink-400">{item.label}</span>
                 {item.href ? (
                   <a
                     href={item.href}
                     target={item.href.startsWith('http') ? '_blank' : undefined}
                     rel="noreferrer"
-                    className="font-body text-sm text-ink-200 hover:text-gold transition-colors duration-300 flex items-center gap-2 group"
+                    className="col-span-2 font-body text-sm text-ink-200 hover:text-gold transition-colors duration-300 flex items-center gap-4 group"
                   >
                     <span>{item.value}</span>
-                    <motion.span initial={{ x: 0, opacity: 0 }} whileHover={{ x: 4, opacity: 1 }} className="text-gold text-xs">→</motion.span>
+                    <motion.span
+                      initial={{ x: 0, opacity: 0 }}
+                      whileHover={{ x: 4, opacity: 1 }}
+                      className="text-gold text-xs"
+                    >
+                      →
+                    </motion.span>
                   </a>
                 ) : (
-                  <span className="font-body text-sm text-ink-300">{item.value}</span>
+                  <span className="col-span-2 font-body text-sm text-ink-300">{item.value}</span>
                 )}
               </div>
-            ))}
-          </div>
-        </Reveal>
+            </Reveal>
+          ))}
+        </div>
 
         {/* Primary CTA */}
         <Reveal delay={0.4}>
