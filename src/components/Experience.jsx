@@ -91,9 +91,7 @@ export default function Experience() {
               className="font-display font-light text-cream leading-tight"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
             >
-              Where I've
-              <br />
-              <em className="text-gold-gradient">done the work.</em>
+              Where I've <em className="text-gold-gradient">done the work.</em>
             </h2>
           </Reveal>
         </div>

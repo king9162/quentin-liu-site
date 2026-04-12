@@ -90,9 +90,7 @@ export default function Work() {
               className="font-display font-light text-cream leading-tight"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
             >
-              Work that
-              <br />
-              <em className="text-gold-gradient">made a difference.</em>
+              Work that <em className="text-gold-gradient">made a difference.</em>
             </h2>
           </Reveal>
           <Reveal delay={0.1}>

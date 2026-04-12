@@ -50,9 +50,7 @@ export default function Contact() {
             className="font-display font-light text-cream leading-tight mb-8"
             style={{ fontSize: 'clamp(3rem, 8vw, 7rem)', letterSpacing: '-0.03em' }}
           >
-            Let's
-            <br />
-            <em className="text-gold-gradient">connect.</em>
+            Let's <em className="text-gold-gradient">connect.</em>
           </h2>
         </Reveal>
 
