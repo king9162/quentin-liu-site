@@ -118,7 +118,7 @@ export default function Skills() {
             <Reveal delay={0.2}>
               <div className="font-mono text-[9px] tracking-widest3 uppercase text-ink-500 mb-8">Core Tools</div>
               <div className="grid grid-cols-3 gap-px bg-ink-800">
-                {['Power BI', 'SAP ERP', 'Excel', 'Dashboard\nDesign', 'Data\nAnalysis', 'SQL'].map((tool) => (
+                {['Power BI', 'SAP ERP', 'Excel', 'Dashboard\nDesign', 'Data\nAnalysis'].map((tool) => (
                   <motion.div
                     key={tool}
                     whileHover={{ backgroundColor: '#141414' }}
