@@ -1,5 +1,6 @@
 import React from 'react';
 import Cursor from './components/Cursor';
+import ScrollProgress from './components/ScrollProgress';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -14,6 +15,7 @@ export default function App() {
   return (
     <div className="bg-ink-950 min-h-screen">
       <Cursor />
+      <ScrollProgress />
       <Navbar />
       <main>
         <Hero />
