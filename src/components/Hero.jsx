@@ -49,8 +49,9 @@ export default function Hero() {
           </motion.h1>
         </div>
 
-        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.9 }} className="font-body font-light text-ink-200 mb-14 max-w-lg mx-auto" style={{ fontSize: '1.05rem', lineHeight: 1.75 }}>
-          Analytical thinking applied to supply chain, operations, and strategy.
+        <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.9 }} className="font-body font-light text-ink-200 mb-14 max-w-2xl mx-auto" style={{ fontSize: '1.05rem', lineHeight: 1.75 }}>
+          Analytical thinking applied to supply chain, operations, and strategy.<br />
+          Based in New Jersey, working across the U.S. and Asia.
         </motion.p>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 1.05 }} className="flex items-center justify-center gap-5 flex-wrap">
