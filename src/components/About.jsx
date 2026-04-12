@@ -42,18 +42,18 @@ export default function About() {
           </div>
         </Reveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-32 items-start">
-          {/* Left: Editorial statement */}
-          <div>
-            <Reveal delay={0.1}>
-              <h2
-                className="font-display font-light text-cream leading-tight mb-10 whitespace-nowrap"
-                style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
-              >
-                Thinking clearly, <em className="text-gold-gradient">moving decisively.</em>
-              </h2>
-            </Reveal>
+        <Reveal delay={0.1}>
+          <h2
+            className="font-display font-light text-cream leading-tight mb-16 whitespace-nowrap"
+            style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
+          >
+            Thinking clearly, <em className="text-gold-gradient">moving decisively.</em>
+          </h2>
+        </Reveal>
 
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-32 items-start">
+          {/* Left: body copy */}
+          <div>
             <Reveal delay={0.2}>
               <p className="font-body font-light text-ink-200 leading-relaxed mb-8" style={{ fontSize: '1.05rem' }}>
                 I'm Quentin, a business analyst based in New Jersey. I work on supply chain and operations
@@ -93,7 +93,7 @@ export default function About() {
           </div>
 
           {/* Right: Stats + detail */}
-          <div className="lg:mt-32">
+          <div>
             {/* Stats grid */}
             <div className="grid grid-cols-2 gap-px bg-ink-700 mb-16">
               {stats.map((stat, i) => (
