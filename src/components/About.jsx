@@ -1,6 +1,35 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useRef, useEffect, useState } from 'react';
+import { motion, useInView } from 'framer-motion';
 import { useScrollReveal } from '../hooks/useScrollReveal';
+
+function CountUp({ target, suffix = '' }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+  const [display, setDisplay] = useState(0);
+
+  useEffect(() => {
+    if (!isInView) return;
+    const num = parseInt(target);
+    if (isNaN(num)) return;
+    const duration = 1000;
+    let startTime = null;
+
+    const animate = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const elapsed = Math.min(timestamp - startTime, duration);
+      const progress = 1 - Math.pow(1 - elapsed / duration, 3);
+      setDisplay(Math.floor(progress * num));
+      if (elapsed < duration) requestAnimationFrame(animate);
+      else setDisplay(num);
+    };
+
+    requestAnimationFrame(animate);
+  }, [isInView, target]);
+
+  const num = parseInt(target);
+  if (isNaN(num)) return <span ref={ref}>{target}</span>;
+  return <span ref={ref}>{display}{suffix}</span>;
+}
 
 function Reveal({ children, delay = 0, className = '' }) {
   const { ref, isInView } = useScrollReveal();
@@ -18,10 +47,10 @@ function Reveal({ children, delay = 0, className = '' }) {
 }
 
 const stats = [
-  { value: '3+', label: 'Years Experience' },
-  { value: '2', label: 'Languages' },
-  { value: '2', label: 'Continents' },
-  { value: 'M.S.', label: 'Supply Chain Analytics' },
+  { value: '3', suffix: '+', label: 'Years Experience' },
+  { value: '2', suffix: '', label: 'Languages' },
+  { value: '2', suffix: '', label: 'Continents' },
+  { value: 'M.S.', suffix: '', label: 'Supply Chain Analytics' },
 ];
 
 export default function About() {
@@ -103,7 +132,7 @@ export default function About() {
                       className="font-display text-gold font-light mb-2 group-hover:text-gold-light transition-colors duration-300"
                       style={{ fontSize: 'clamp(2rem, 4vw, 3rem)' }}
                     >
-                      {stat.value}
+                      <CountUp target={stat.value} suffix={stat.suffix} />
                     </div>
                     <div className="font-mono text-[9px] tracking-widest2 uppercase text-ink-400">
                       {stat.label}

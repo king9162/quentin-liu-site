@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import MagneticButton from './MagneticButton';
 
 export default function Hero() {
   const containerRef = useRef(null);
@@ -55,8 +56,12 @@ export default function Hero() {
         </motion.p>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 1.05 }} className="flex items-center justify-center gap-5 flex-wrap">
-          <button onClick={scrollToAbout} className="font-body text-xs tracking-widest2 uppercase px-8 py-3.5 bg-gold text-ink-950 hover:bg-gold-light transition-all duration-300">View My Work</button>
-          <a href="mailto:0906yuliang@gmail.com" className="font-body text-xs tracking-widest2 uppercase px-8 py-3.5 border border-ink-500 text-ink-100 hover:border-gold hover:text-gold transition-all duration-300">Get In Touch</a>
+          <MagneticButton>
+            <button onClick={scrollToAbout} className="font-body text-xs tracking-widest2 uppercase px-8 py-3.5 bg-gold text-ink-950 hover:bg-gold-light transition-all duration-300">View My Work</button>
+          </MagneticButton>
+          <MagneticButton>
+            <a href="mailto:0906yuliang@gmail.com" className="font-body text-xs tracking-widest2 uppercase px-8 py-3.5 border border-ink-500 text-ink-100 hover:border-gold hover:text-gold transition-all duration-300">Get In Touch</a>
+          </MagneticButton>
         </motion.div>
       </motion.div>
 
