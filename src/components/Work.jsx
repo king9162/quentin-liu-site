@@ -31,6 +31,17 @@ const projects = [
   },
   {
     number: '002',
+    title: 'Market Analysis for Trade Shows',
+    company: 'A.I. Technology, Inc.',
+    category: 'Strategy',
+    year: '2026',
+    description:
+      'To make trade show participation worthwhile, I worked on understanding the customer landscape: who the buyers are, what they care about, and where to focus. The research helped the team go in with a clearer picture of who they were talking to.',
+    outcomes: ['Customer segmentation', 'Competitive landscape research', 'Sales focus refined'],
+    tags: ['Market Analysis', 'Segmentation', 'Strategy'],
+  },
+  {
+    number: '003',
     title: 'Supplier Sourcing & Feasibility Analysis',
     company: 'Dental Wellness Spa',
     category: 'Procurement',
@@ -41,7 +52,7 @@ const projects = [
     tags: ['Sourcing', 'Feasibility', 'Procurement'],
   },
   {
-    number: '003',
+    number: '004',
     title: 'Power BI Operations Dashboard',
     company: 'Robert Bosch E-bike',
     category: 'Analytics',
@@ -50,17 +61,6 @@ const projects = [
       'Built a set of Power BI dashboards to track order accuracy and fulfillment across global sales channels. The goal was simple: give the team visibility they didn\'t have before and reduce the manual effort of catching errors after the fact.',
     outcomes: ['Real-time order visibility', 'Reduced manual tracking', 'KPI monitoring across channels'],
     tags: ['Power BI', 'SAP', 'Data Analytics'],
-  },
-  {
-    number: '004',
-    title: 'Market Analysis for Industrial Trade Shows',
-    company: 'A.I. Technology, Inc.',
-    category: 'Strategy',
-    year: '2026',
-    description:
-      'To make trade show participation worthwhile, I worked on understanding the customer landscape: who the buyers are, what they care about, and where to focus. The research helped the team go in with a clearer picture of who they were talking to.',
-    outcomes: ['Customer segmentation', 'Competitive landscape research', 'Sales focus refined'],
-    tags: ['Market Analysis', 'Segmentation', 'Strategy'],
   },
 ];
 
