@@ -21,14 +21,14 @@ const education = [
   {
     degree: 'M.S. Supply Chain Analytics',
     school: 'Rutgers University–New Brunswick',
-    period: 'Sep 2024 — Dec 2025',
+    period: 'Sep 2024 ·Dec 2025',
     detail: 'Graduate program focused on supply chain analytics, operations strategy, and data-driven decision making.',
     location: 'New Jersey, USA',
   },
   {
     degree: 'B.A. International Business',
     school: 'Tunghai University',
-    period: 'Sep 2019 — Jun 2023',
+    period: 'Sep 2019 ·Jun 2023',
     detail: 'Undergraduate study in international business, global commerce, and cross-cultural management.',
     location: 'Taiwan',
   },
@@ -46,7 +46,7 @@ export default function Education() {
         {/* Section label */}
         <Reveal>
           <div className="flex items-center gap-4 mb-20">
-            <span className="font-mono text-[9px] tracking-widest3 uppercase text-gold">05 — Education</span>
+            <span className="font-mono text-[9px] tracking-widest3 uppercase text-gold">05 ·Education</span>
             <div className="h-px flex-1 max-w-[60px] bg-gold opacity-30" />
           </div>
         </Reveal>

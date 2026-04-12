@@ -22,7 +22,7 @@ const experiences = [
     index: '01',
     company: 'A.I. Technology, Inc.',
     role: 'Business Analyst',
-    period: 'Jan 2026 — Present',
+    period: 'Jan 2026 ·Present',
     location: 'United States & Asia',
     type: 'Full-time',
     summary: 'Working across manufacturing and supply operations in the U.S. and Asia.',
@@ -38,7 +38,7 @@ const experiences = [
     index: '02',
     company: 'Dental Wellness Spa',
     role: 'Supply Chain & Business Development Intern',
-    period: 'Jun 2025 — Aug 2025',
+    period: 'Jun 2025 ·Aug 2025',
     location: 'United States',
     type: 'Internship',
     summary: 'Built a supplier evaluation process for a new product line from the ground up.',
@@ -52,7 +52,7 @@ const experiences = [
     index: '03',
     company: 'Robert Bosch E-bike',
     role: 'Sales Controlling & Commercial Intern',
-    period: 'May 2022 — Nov 2023',
+    period: 'May 2022 ·Nov 2023',
     location: 'Europe / Asia',
     type: 'Internship',
     summary: 'Supported order operations and built analytics tools across global sales channels.',
@@ -79,7 +79,7 @@ export default function Experience() {
         {/* Section label */}
         <Reveal>
           <div className="flex items-center gap-4 mb-20">
-            <span className="font-mono text-[9px] tracking-widest3 uppercase text-gold">02 — Experience</span>
+            <span className="font-mono text-[9px] tracking-widest3 uppercase text-gold">02 ·Experience</span>
             <div className="h-px flex-1 max-w-[60px] bg-gold opacity-30" />
           </div>
         </Reveal>
