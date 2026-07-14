@@ -49,7 +49,7 @@ function Reveal({ children, delay = 0, className = '' }) {
 const stats = [
   { value: '3', suffix: '+', label: 'Years Experience' },
   { value: '2', suffix: '', label: 'Languages' },
-  { value: '2', suffix: '', label: 'Continents' },
+  { value: '43', suffix: '%', label: 'Error Reduction at Bosch' },
   { value: 'M.S.', suffix: '', label: 'Supply Chain Analytics' },
 ];
 
@@ -59,7 +59,7 @@ export default function About() {
       {/* Side accent */}
       <div
         className="absolute left-0 top-0 bottom-0 w-px opacity-20"
-        style={{ background: 'linear-gradient(to bottom, transparent, #b89d6a, transparent)' }}
+        style={{ background: 'linear-gradient(to bottom, transparent, #0071e3, transparent)' }}
       />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -85,34 +85,35 @@ export default function About() {
           <div>
             <Reveal delay={0.2}>
               <p className="font-body font-light text-ink-200 leading-relaxed mb-8" style={{ fontSize: '1.05rem' }}>
-                I'm Quentin, a business analyst based in New Jersey. I work in supply chain and operations
-                across the U.S. and Asia, where the problem is almost always the same: too much going on,
-                not enough clarity.
+                I'm Quentin Liu, a Business Analyst and Business Systems professional based in Princeton, NJ.
+                I work at the intersection of supply chain strategy, data analytics, and operational execution.
               </p>
             </Reveal>
 
             <Reveal delay={0.3}>
               <p className="font-body font-light text-ink-300 leading-relaxed mb-10" style={{ fontSize: '0.95rem', lineHeight: 1.85 }}>
-                At A.I. Technology, I support manufacturing operations across the U.S. and Asia. Day to day,
-                that means working with suppliers, managing material flows, and helping the team make
-                smarter sourcing calls.
+                At A.I. Technology, I lead U.S. and China supplier sourcing, develop landed cost models,
+                and prepare executive business analyses that drive strategic sourcing decisions. I also
+                conduct market intelligence at manufacturing trade shows and collaborate with overseas
+                suppliers to evaluate new product applications.
               </p>
             </Reveal>
 
             <Reveal delay={0.35}>
               <p className="font-body font-light text-ink-300 leading-relaxed mb-14" style={{ fontSize: '0.95rem', lineHeight: 1.85 }}>
-                Before that, I built supplier evaluation infrastructure at a startup and spent over a year
-                at Bosch on order operations and analytics. I speak English and Mandarin Chinese, which
-                helps when the work spans continents.
+                Beyond supply chain, I build business systems end-to-end — from bilingual CRM and booking
+                platforms with integrated POS and SMS automation, to Power BI dashboards that cut Bosch's
+                processing errors by 43%. Fluent in English and Mandarin Chinese, I operate naturally
+                across cultures and time zones.
               </p>
             </Reveal>
 
             <Reveal delay={0.4}>
               <div className="flex flex-wrap gap-3">
-                {['Business Analysis', 'Supply Chain', 'Operations', 'Market Analysis'].map(tag => (
+                {['Business Analysis', 'Supply Chain', 'Business Systems', 'Data Analytics'].map(tag => (
                   <span
                     key={tag}
-                    className="font-mono text-[9px] tracking-widest2 uppercase text-gold border border-gold-muted px-4 py-2"
+                    className="font-mono text-[9px] tracking-widest2 uppercase text-gold border border-gold-muted px-4 py-2 rounded-full"
                   >
                     {tag}
                   </span>

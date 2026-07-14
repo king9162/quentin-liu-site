@@ -22,45 +22,60 @@ const experiences = [
     index: '01',
     company: 'A.I. Technology, Inc.',
     role: 'Business Analyst',
-    period: 'Jan 2026 ·Present',
-    location: 'United States & Asia',
+    period: 'Jan 2026 · Present',
+    location: 'United States & China',
     type: 'Full-time',
-    summary: 'Working across manufacturing and supply operations in the U.S. and Asia.',
+    summary: 'Leading U.S. and China supplier sourcing, landed cost modeling, and executive business analysis.',
     points: [
-      'Support manufacturing operations across the U.S. and Asia',
-      'Evaluate suppliers on cost, lead time, and availability to inform sourcing decisions',
-      'Coordinate raw material logistics and inventory planning',
-      'Run market research and customer targeting for industrial trade shows',
-      'Work closely with operations, sales, and production teams',
+      'Led U.S. and China supplier sourcing and total landed cost analysis',
+      'Developed landed cost models and evaluated logistics strategies for executive sourcing decisions',
+      'Conducted market intelligence and competitor research at manufacturing trade shows',
+      'Collaborated with cross-functional teams and overseas suppliers to evaluate new adhesive applications',
+      'Prepared executive business analyses, pricing recommendations, and product comparison reports',
     ],
   },
   {
     index: '02',
-    company: 'Dental Wellness Spa',
-    role: 'Supply Chain & Business Development Intern',
-    period: 'Jun 2025 ·Aug 2025',
+    company: 'Yee Eyelashes Studio',
+    role: 'Digital Strategy & Business Systems Lead',
+    period: 'Apr 2026 · Present',
     location: 'United States',
-    type: 'Internship',
-    summary: 'Built a supplier evaluation process for a new product line from the ground up.',
+    type: 'Project',
+    summary: 'Built a full-stack bilingual CRM and booking platform with integrated POS and SMS automation.',
     points: [
-      'Led supplier sourcing for functional beverage ingredients',
-      'Compared suppliers across cost, compliance, MOQ, and lead time',
-      'Built evaluation trackers to keep decisions structured and documented',
+      'Built a bilingual booking and CRM platform supporting daily business operations',
+      'Developed analytics dashboards for client retention, booking conversion, and business performance',
+      'Integrated Square POS and Twilio SMS to automate payments and customer communication',
+      'Implemented SEO and workflow automation to improve online visibility and customer engagement',
     ],
   },
   {
     index: '03',
+    company: 'Dental Wellness Spa',
+    role: 'Supply Chain & Business Development Intern',
+    period: 'Jun 2025 · Aug 2025',
+    location: 'United States',
+    type: 'Internship',
+    summary: 'Built a supplier evaluation process for a functional beverage new product line from the ground up.',
+    points: [
+      'Led supplier sourcing and feasibility analysis for functional beverage ingredients',
+      'Evaluated vendors based on cost, MOQ, regulatory compliance, and lead time',
+      'Built supplier evaluation tools supporting data-driven sourcing decisions',
+    ],
+  },
+  {
+    index: '04',
     company: 'Robert Bosch E-bike',
     role: 'Sales Controlling & Commercial Intern',
-    period: 'May 2022 ·Nov 2023',
+    period: 'May 2022 · Nov 2023',
     location: 'Europe / Asia',
     type: 'Internship',
-    summary: 'Supported order operations and built analytics tools across global sales channels.',
+    summary: 'Delivered 43% error reduction and 15% fulfillment improvement through Power BI and SAP.',
     points: [
-      'Analyzed sales and order data to identify process inefficiencies',
-      'Built Power BI dashboards to track order accuracy and fulfillment',
-      'Used SAP ERP for order management across multiple sales channels',
-      'Coordinated with sales, planning, and logistics teams on day-to-day operations',
+      'Analyzed sales and operational data to identify process improvements and support business decisions',
+      'Built Power BI dashboards to monitor order accuracy and fulfillment KPIs, reducing processing errors by 43% and improving fulfillment efficiency by 15%',
+      'Worked with SAP for order management, data extraction, and workflow tracking across sales and operations teams',
+      'Coordinated with cross-functional teams to resolve order and delivery issues',
     ],
   },
 ];
@@ -72,7 +87,7 @@ export default function Experience() {
     <section id="experience" className="relative py-40 bg-ink-900 overflow-hidden">
       <div
         className="absolute right-0 top-0 bottom-0 w-px opacity-20"
-        style={{ background: 'linear-gradient(to bottom, transparent, #b89d6a, transparent)' }}
+        style={{ background: 'linear-gradient(to bottom, transparent, #0071e3, transparent)' }}
       />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -144,8 +159,8 @@ export default function Experience() {
                       className="w-4 h-4 flex items-center justify-center"
                     >
                       <svg width="12" height="12" viewBox="0 0 12 12" fill="none">
-                        <line x1="6" y1="0" x2="6" y2="12" stroke="#b89d6a" strokeWidth="0.8"/>
-                        <line x1="0" y1="6" x2="12" y2="6" stroke="#b89d6a" strokeWidth="0.8"/>
+                        <line x1="6" y1="0" x2="6" y2="12" stroke="#0071e3" strokeWidth="0.8"/>
+                        <line x1="0" y1="6" x2="12" y2="6" stroke="#0071e3" strokeWidth="0.8"/>
                       </svg>
                     </motion.div>
                   </div>

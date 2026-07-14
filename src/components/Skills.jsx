@@ -19,27 +19,32 @@ function Reveal({ children, delay = 0, className = '' }) {
 
 const skillCategories = [
   {
-    label: 'Business & Strategy',
+    label: 'Business & Data Analysis',
     icon: '◈',
-    skills: ['Business Analysis', 'Market Analysis', 'Customer Segmentation', 'Cost & Feasibility Analysis', 'Process Improvement', 'Cross-Functional Collaboration'],
+    skills: ['Requirements Gathering', 'Business Process Analysis', 'Dashboard Development', 'Cost Analysis', 'Market Intelligence', 'Competitor Research'],
   },
   {
     label: 'Supply Chain & Operations',
     icon: '◉',
-    skills: ['Sourcing & Supplier Coordination', 'Inventory & Material Planning', 'Global Manufacturing Support', 'Raw Material Logistics', 'Supply Chain Execution'],
+    skills: ['Supplier Sourcing', 'Landed Cost Modeling', 'Feasibility Analysis', 'Vendor Evaluation', 'Logistics Strategy', 'Cross-Functional Collaboration'],
   },
   {
-    label: 'Tools & Technology',
+    label: 'Technical Tools',
     icon: '◎',
-    skills: ['Power BI', 'SAP ERP', 'Advanced Excel', 'Dashboard Reporting', 'Data Analysis'],
+    skills: ['SAP ERP', 'Power BI', 'Advanced Excel', 'AI-assisted Development (Claude Code)'],
+  },
+  {
+    label: 'Business Systems',
+    icon: '◇',
+    skills: ['Square POS', 'Twilio SMS', 'Google Analytics', 'Google Search Console', 'SEO', 'CRM Platforms', 'Workflow Automation'],
   },
 ];
 
 const proficiencies = [
   { name: 'Business Analysis' },
-  { name: 'Supply Chain Operations' },
+  { name: 'Supply Chain & Sourcing' },
   { name: 'Power BI' },
-  { name: 'Market Analysis' },
+  { name: 'Business Systems' },
   { name: 'SAP ERP' },
   { name: 'Data Analytics' },
 ];
@@ -57,7 +62,7 @@ function Bar({ name, delay }) {
           animate={isInView ? { scaleX: 1 } : {}}
           transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1], delay: delay + 0.2 }}
           className="absolute inset-0 origin-left"
-          style={{ background: 'linear-gradient(90deg, #8a7248, #b89d6a, #d4bc8e)' }}
+          style={{ background: 'linear-gradient(90deg, #005db0, #0071e3, #2997ff)' }}
         />
       </div>
     </div>
@@ -69,7 +74,7 @@ export default function Skills() {
     <section id="skills" className="relative py-40 bg-ink-900 overflow-hidden">
       <div
         className="absolute right-0 top-0 bottom-0 w-px opacity-20"
-        style={{ background: 'linear-gradient(to bottom, transparent, #b89d6a, transparent)' }}
+        style={{ background: 'linear-gradient(to bottom, transparent, #0071e3, transparent)' }}
       />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -109,8 +114,8 @@ export default function Skills() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{ delay: i * 0.08 + j * 0.04, duration: 0.4 }}
-                        whileHover={{ borderColor: '#b89d6a', color: '#d4bc8e' }}
-                        className="font-body text-xs text-ink-300 border border-ink-700 px-4 py-2 transition-colors duration-300"
+                        whileHover={{ borderColor: '#0071e3', color: '#2997ff' }}
+                        className="font-body text-xs text-ink-300 border border-ink-700 px-4 py-2 rounded-full transition-colors duration-300"
                       >
                         {skill}
                       </motion.span>

@@ -20,47 +20,47 @@ function Reveal({ children, delay = 0, className = '' }) {
 const projects = [
   {
     number: '001',
-    title: 'Manufacturing & Supply Coordination',
+    title: 'Supplier Sourcing & Landed Cost Analysis',
     company: 'A.I. Technology, Inc.',
     category: 'Operations',
     year: '2026',
     description:
-      'Working across U.S. and Asian manufacturing facilities, I help keep materials moving and suppliers aligned. It covers everything from sourcing analysis to logistics coordination, the kind of daily work that keeps production running.',
-    outcomes: ['Cross-border supplier coordination', 'Inventory planning support', 'Raw material logistics'],
-    tags: ['Supply Chain', 'Global Ops', 'Logistics'],
+      'Led end-to-end U.S. and China supplier sourcing with full landed cost modeling for executive decision-making. Evaluated logistics strategies, conducted market intelligence at manufacturing trade shows, and prepared pricing and product comparison reports that directly shaped strategic sourcing outcomes.',
+    outcomes: ['Landed cost models for exec review', 'Multi-country supplier network', 'Competitor research at trade shows'],
+    tags: ['Supply Chain', 'Cost Analysis', 'Sourcing'],
   },
   {
     number: '002',
-    title: 'Market Analysis for Trade Shows',
-    company: 'A.I. Technology, Inc.',
-    category: 'Strategy',
+    title: 'Bilingual CRM & Business Systems Platform',
+    company: 'Yee Eyelashes Studio',
+    category: 'Business Systems',
     year: '2026',
     description:
-      'To make trade show participation worthwhile, I worked on understanding the customer landscape: who the buyers are, what they care about, and where to focus. The research helped the team go in with a clearer picture of who they were talking to.',
-    outcomes: ['Customer segmentation', 'Competitive landscape research', 'Sales focus refined'],
-    tags: ['Market Analysis', 'Segmentation', 'Strategy'],
+      'Designed and built a full-stack bilingual booking and CRM platform from scratch. Integrated Square POS for payment automation and Twilio SMS for client communication, and developed analytics dashboards tracking retention, booking conversion, and overall business performance. Also implemented SEO and workflow automation to drive organic visibility.',
+    outcomes: ['Bilingual booking + CRM live', 'Square POS & Twilio SMS integrated', 'Analytics dashboards deployed'],
+    tags: ['CRM', 'Business Systems', 'Analytics', 'SEO'],
   },
   {
     number: '003',
-    title: 'Supplier Sourcing & Feasibility Analysis',
-    company: 'Dental Wellness Spa',
-    category: 'Procurement',
-    year: '2025',
-    description:
-      'When the team needed a supplier for a new product, there was no existing process. I built it from scratch: defined what to look for, compared candidates across cost and compliance, and created trackers that made the decision clear and easy to document.',
-    outcomes: ['Evaluation framework created', 'Supplier comparison built', 'Decision documentation in place'],
-    tags: ['Sourcing', 'Feasibility', 'Procurement'],
-  },
-  {
-    number: '004',
     title: 'Power BI Operations Dashboard',
     company: 'Robert Bosch E-bike',
     category: 'Analytics',
     year: '2022–23',
     description:
-      'Built a set of Power BI dashboards to track order accuracy and fulfillment across global sales channels. The goal was simple: give the team visibility they didn\'t have before and reduce the manual effort of catching errors after the fact.',
-    outcomes: ['Real-time order visibility', 'Reduced manual tracking', 'KPI monitoring across channels'],
-    tags: ['Power BI', 'SAP', 'Data Analytics'],
+      'Built Power BI dashboards to monitor order accuracy and fulfillment KPIs across global sales channels, reducing processing errors by 43% and improving fulfillment efficiency by 15%. Operated SAP ERP for order management and coordinated across sales, planning, and logistics teams to close operational gaps.',
+    outcomes: ['43% reduction in processing errors', '15% fulfillment efficiency gain', 'Real-time SAP-linked KPI monitoring'],
+    tags: ['Power BI', 'SAP ERP', 'Data Analytics'],
+  },
+  {
+    number: '004',
+    title: 'Supplier Feasibility & Evaluation Framework',
+    company: 'Dental Wellness Spa',
+    category: 'Procurement',
+    year: '2025',
+    description:
+      'Built a structured supplier evaluation program for a functional beverage new product initiative. Assessed vendors across cost, MOQ, regulatory compliance, and lead time — creating decision-support tools that brought rigor to an unstructured sourcing process.',
+    outcomes: ['Evaluation framework built from scratch', 'Multi-vendor benchmarking', 'Data-driven sourcing decisions'],
+    tags: ['Sourcing', 'Feasibility', 'Procurement'],
   },
 ];
 
@@ -71,7 +71,7 @@ export default function Work() {
     <section id="work" className="relative py-40 bg-ink-950 overflow-hidden">
       <div
         className="absolute left-0 top-0 bottom-0 w-px opacity-20"
-        style={{ background: 'linear-gradient(to bottom, transparent, #b89d6a, transparent)' }}
+        style={{ background: 'linear-gradient(to bottom, transparent, #0071e3, transparent)' }}
       />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -103,7 +103,7 @@ export default function Work() {
                 className="bg-ink-950 p-10 lg:p-14 relative overflow-hidden group"
                 onHoverStart={() => setHovered(i)}
                 onHoverEnd={() => setHovered(null)}
-                whileHover={{ backgroundColor: '#0e0e0e' }}
+                whileHover={{ backgroundColor: '#f5f5f7' }}
                 transition={{ duration: 0.4 }}
               >
                 {/* Hover gradient */}
@@ -113,7 +113,7 @@ export default function Work() {
                   transition={{ duration: 0.4 }}
                   className="absolute top-0 right-0 w-48 h-48 pointer-events-none"
                   style={{
-                    background: 'radial-gradient(circle at top right, rgba(184,157,106,0.06), transparent 70%)',
+                    background: 'radial-gradient(circle at top right, rgba(0,113,227,0.06), transparent 70%)',
                   }}
                 />
 
@@ -121,7 +121,7 @@ export default function Work() {
                 <div className="flex justify-between items-start mb-10">
                   <span className="font-mono text-[9px] tracking-widest text-ink-600">{proj.number}</span>
                   <div className="flex items-center gap-3">
-                    <span className="font-mono text-[9px] tracking-widest2 uppercase text-gold border border-gold-muted px-3 py-1.5">
+                    <span className="font-mono text-[9px] tracking-widest2 uppercase text-gold border border-gold-muted px-3 py-1.5 rounded-full">
                       {proj.category}
                     </span>
                     <span className="font-mono text-[9px] tracking-widest text-ink-600">{proj.year}</span>
