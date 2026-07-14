@@ -20,7 +20,7 @@ function Reveal({ children, delay = 0, className = '' }) {
 const projects = [
   {
     number: '001',
-    title: 'Supplier Sourcing & Landed Cost Analysis',
+    title: 'Business Analyst',
     company: 'A.I. Technology, Inc.',
     category: 'Operations',
     year: '2026',
@@ -31,7 +31,7 @@ const projects = [
   },
   {
     number: '002',
-    title: 'Bilingual CRM & Business Systems Platform',
+    title: 'Digital Strategy & Business Systems Lead',
     company: 'Yee Eyelashes Studio',
     category: 'Business Systems',
     year: '2026',
@@ -42,7 +42,7 @@ const projects = [
   },
   {
     number: '003',
-    title: 'Power BI Operations Dashboard',
+    title: 'Sales Controlling & Commercial Intern',
     company: 'Robert Bosch E-bike',
     category: 'Analytics',
     year: '2022–23',
@@ -53,7 +53,7 @@ const projects = [
   },
   {
     number: '004',
-    title: 'Supplier Feasibility & Evaluation Framework',
+    title: 'Supply Chain & Business Development Intern',
     company: 'Dental Wellness Spa',
     category: 'Procurement',
     year: '2025',
