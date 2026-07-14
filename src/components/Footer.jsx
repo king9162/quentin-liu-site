@@ -15,12 +15,6 @@ export default function Footer() {
 
         <div className="flex items-center gap-6">
           <a
-            href="mailto:0906yuliang@gmail.com"
-            className="font-mono text-[8px] tracking-widest uppercase text-ink-600 hover:text-gold transition-colors duration-300"
-          >
-            Email
-          </a>
-          <a
             href="https://www.linkedin.com/in/quentin-liu/"
             target="_blank"
             rel="noreferrer"

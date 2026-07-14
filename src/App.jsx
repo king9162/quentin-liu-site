@@ -1,6 +1,5 @@
 import React from 'react';
 import { useLenis } from './hooks/useLenis';
-import Cursor from './components/Cursor';
 import ScrollProgress from './components/ScrollProgress';
 import GrainOverlay from './components/GrainOverlay';
 import BackToTop from './components/BackToTop';
@@ -18,7 +17,6 @@ export default function App() {
   useLenis();
   return (
     <div className="bg-ink-950 min-h-screen">
-      <Cursor />
       <ScrollProgress />
       <GrainOverlay />
       <BackToTop />

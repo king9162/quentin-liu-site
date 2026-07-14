@@ -4,7 +4,7 @@
 
 @layer base {
   html {
-    font-family: 'DM Sans', 'Helvetica Neue', sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -13,14 +13,14 @@
 
 @layer utilities {
   .text-gold-gradient {
-    background: linear-gradient(135deg, #d4bc8e 0%, #b89d6a 50%, #8a7248 100%);
+    background: linear-gradient(135deg, #2997ff 0%, #0071e3 50%, #005db0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .border-gold-gradient {
-    border-image: linear-gradient(135deg, #b89d6a, #8a7248) 1;
+    border-image: linear-gradient(135deg, #2997ff, #005db0) 1;
   }
 
   .bg-noise {
@@ -32,11 +32,3 @@
   }
 }
 
-/* Smooth cursor */
-* {
-  cursor: none;
-}
-
-a, button, [role="button"] {
-  cursor: none;
-}

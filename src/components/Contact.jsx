@@ -18,8 +18,6 @@ function Reveal({ children, delay = 0, className = '' }) {
 }
 
 const contactLinks = [
-  { label: 'Email', value: '0906yuliang@gmail.com', href: 'mailto:0906yuliang@gmail.com' },
-  { label: 'Phone', value: '+1-530-933-7152', href: 'tel:+15309337152' },
   { label: 'LinkedIn', value: '/in/quentin-liu', href: 'https://www.linkedin.com/in/quentin-liu/' },
   { label: 'Location', value: 'New Jersey, United States', href: null },
 ];
@@ -31,7 +29,7 @@ export default function Contact() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse 60% 60% at 50% 100%, rgba(184,157,106,0.04) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse 60% 60% at 50% 100%, rgba(0,113,227,0.04) 0%, transparent 70%)',
         }}
       />
 
@@ -95,7 +93,7 @@ export default function Contact() {
           <div className="mt-16 flex flex-col sm:flex-row gap-5">
             <a
               href="mailto:0906yuliang@gmail.com"
-              className="group inline-flex items-center gap-4 font-body text-xs tracking-widest2 uppercase px-10 py-4 bg-gold text-ink-950 hover:bg-gold-light transition-all duration-300"
+              className="group inline-flex items-center gap-4 font-body text-xs tracking-widest2 uppercase px-10 py-4 bg-gold text-white rounded-full hover:bg-gold-light transition-all duration-300"
             >
               Send a Message
               <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
@@ -104,7 +102,7 @@ export default function Contact() {
               href="https://www.linkedin.com/in/quentin-liu/"
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-4 font-body text-xs tracking-widest2 uppercase px-10 py-4 border border-ink-600 text-ink-200 hover:border-gold hover:text-gold transition-all duration-300"
+              className="inline-flex items-center gap-4 font-body text-xs tracking-widest2 uppercase px-10 py-4 border border-ink-600 text-ink-200 rounded-full hover:border-gold hover:text-gold transition-all duration-300"
             >
               View LinkedIn
               <span>↗</span>

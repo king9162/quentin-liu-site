@@ -32,9 +32,10 @@ export default function Navbar() {
         transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
         className="fixed top-0 left-0 right-0 z-[100] transition-all duration-700"
         style={{
-          background: scrolled ? 'rgba(8,8,8,0.92)' : 'transparent',
-          backdropFilter: scrolled ? 'blur(20px)' : 'none',
-          borderBottom: scrolled ? '1px solid rgba(184,157,106,0.1)' : '1px solid transparent',
+          background: scrolled ? 'rgba(255,255,255,0.8)' : 'transparent',
+          backdropFilter: scrolled ? 'saturate(180%) blur(20px)' : 'none',
+          WebkitBackdropFilter: scrolled ? 'saturate(180%) blur(20px)' : 'none',
+          borderBottom: scrolled ? '1px solid rgba(0,0,0,0.1)' : '1px solid transparent',
         }}
       >
         <div className="max-w-7xl mx-auto px-6 md:px-12 h-16 flex items-center justify-between">
@@ -68,7 +69,7 @@ export default function Navbar() {
           <div className="hidden md:block">
             <button
               onClick={() => scrollTo('#contact')}
-              className="font-body text-xs tracking-widest2 uppercase text-gold border border-gold-dark px-5 py-2 hover:bg-gold hover:text-ink-950 transition-all duration-300"
+              className="font-body text-xs tracking-widest2 uppercase text-gold border border-gold-dark px-5 py-2 rounded-full hover:bg-gold hover:text-white transition-all duration-300"
             >
               Connect
             </button>

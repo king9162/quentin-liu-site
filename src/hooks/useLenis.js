@@ -4,9 +4,10 @@ import Lenis from 'lenis';
 export function useLenis() {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 1.2,
-      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+      lerp: 0.07,          // 每幀向目標移動 7%，產生 Apple 式慣性漂浮感
       smoothWheel: true,
+      smoothTouch: false,  // trackpad 保留 macOS 原生物理效果
+      wheelMultiplier: 0.9,
     });
 
     let rafId;

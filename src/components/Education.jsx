@@ -39,7 +39,7 @@ export default function Education() {
     <section id="education" className="relative py-40 bg-ink-950 overflow-hidden">
       <div
         className="absolute left-0 top-0 bottom-0 w-px opacity-20"
-        style={{ background: 'linear-gradient(to bottom, transparent, #b89d6a, transparent)' }}
+        style={{ background: 'linear-gradient(to bottom, transparent, #0071e3, transparent)' }}
       />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -55,7 +55,7 @@ export default function Education() {
           {education.map((edu, i) => (
             <Reveal key={edu.school} delay={i * 0.12} className="h-full">
               <motion.div
-                whileHover={{ backgroundColor: '#0e0e0e' }}
+                whileHover={{ backgroundColor: '#f5f5f7' }}
                 className="h-full bg-ink-950 p-12 lg:p-16 group transition-colors duration-500 relative overflow-hidden"
               >
                 <motion.div
