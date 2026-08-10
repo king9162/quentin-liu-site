@@ -47,9 +47,9 @@ function Reveal({ children, delay = 0, className = '' }) {
 }
 
 const stats = [
-  { value: '3', suffix: '+', label: 'Years Experience' },
-  { value: '2', suffix: '', label: 'Languages' },
-  { value: '43', suffix: '%', label: 'Error Reduction at Bosch' },
+  { value: '43', suffix: '%', label: 'Processing Error Reduction' },
+  { value: '15', suffix: '%', label: 'Fulfillment Efficiency Gain' },
+  { value: '2', suffix: '', label: 'Languages Spoken' },
   { value: 'M.S.', suffix: '', label: 'Supply Chain Analytics' },
 ];
 
@@ -76,7 +76,7 @@ export default function About() {
             className="font-display font-light text-cream leading-tight mb-16 lg:whitespace-nowrap"
             style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
           >
-            Thinking clearly, <em className="text-gold-gradient">moving decisively.</em>
+            Analyst by training. <em className="text-gold-gradient">Builder by instinct.</em>
           </h2>
         </Reveal>
 
@@ -85,32 +85,33 @@ export default function About() {
           <div>
             <Reveal delay={0.2}>
               <p className="font-body font-light text-ink-200 leading-relaxed mb-8" style={{ fontSize: '1.05rem' }}>
-                I'm Quentin Liu, a Business Analyst and Business Systems professional based in Princeton, NJ.
-                I work at the intersection of supply chain strategy, data analytics, and operational execution.
+                I'm Quentin Liu — a Business Development and Business Systems professional based in
+                Princeton, NJ. I operate where supply chain strategy meets real-world execution,
+                building the tools and making the calls that move businesses forward.
               </p>
             </Reveal>
 
             <Reveal delay={0.3}>
               <p className="font-body font-light text-ink-300 leading-relaxed mb-10" style={{ fontSize: '0.95rem', lineHeight: 1.85 }}>
-                At A.I. Technology, I lead U.S. and China supplier sourcing, develop landed cost models,
-                and prepare executive business analyses that drive strategic sourcing decisions. I also
-                conduct market intelligence at manufacturing trade shows and collaborate with overseas
-                suppliers to evaluate new product applications.
+                At A.I. Technology, I own U.S.-China supplier sourcing end to end — modeling landed
+                costs, stress-testing logistics strategies, and preparing the executive analyses that
+                determine where and how we source globally. I'm the person who's both read the data
+                and written the recommendation.
               </p>
             </Reveal>
 
             <Reveal delay={0.35}>
               <p className="font-body font-light text-ink-300 leading-relaxed mb-14" style={{ fontSize: '0.95rem', lineHeight: 1.85 }}>
-                Beyond supply chain, I build business systems end-to-end — from bilingual CRM and booking
-                platforms with integrated POS and SMS automation, to Power BI dashboards that cut Bosch's
-                processing errors by 43%. Fluent in English and Mandarin Chinese, I operate naturally
-                across cultures and time zones.
+                In parallel, I architect business systems from scratch — a full-stack bilingual CRM,
+                booking platform, and tiered loyalty system with live Square POS and Twilio integrations.
+                Earlier, my Power BI dashboards at Bosch cut processing errors by 43% and lifted
+                fulfillment efficiency by 15%. I build things that last.
               </p>
             </Reveal>
 
             <Reveal delay={0.4}>
               <div className="flex flex-wrap gap-3">
-                {['Business Analysis', 'Supply Chain', 'Business Systems', 'Data Analytics'].map(tag => (
+                {['Business Development', 'Supply Chain', 'Business Systems', 'Data Analytics'].map(tag => (
                   <span
                     key={tag}
                     className="font-mono text-[9px] tracking-widest2 uppercase text-gold border border-gold-muted px-4 py-2 rounded-full"

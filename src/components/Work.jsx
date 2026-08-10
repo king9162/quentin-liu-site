@@ -20,25 +20,25 @@ function Reveal({ children, delay = 0, className = '' }) {
 const projects = [
   {
     number: '001',
-    title: 'Business Analyst',
+    title: 'Business Development',
     company: 'A.I. Technology, Inc.',
     category: 'Operations',
     year: '2026',
     description:
-      'Led end-to-end U.S. and China supplier sourcing with full landed cost modeling for executive decision-making. Evaluated logistics strategies, conducted market intelligence at manufacturing trade shows, and prepared pricing and product comparison reports that directly shaped strategic sourcing outcomes.',
-    outcomes: ['Landed cost models for exec review', 'Multi-country supplier network', 'Competitor research at trade shows'],
-    tags: ['Supply Chain', 'Cost Analysis', 'Sourcing'],
+      'Own U.S.-China supplier sourcing end to end — building the landed cost models executives rely on, stress-testing logistics strategies, and delivering the competitive intelligence that shapes where and how the company sources globally. Every recommendation I write has a number behind it.',
+    outcomes: ['Executive-grade landed cost models', 'U.S.–China dual-market sourcing', 'Trade show competitive intelligence'],
+    tags: ['Supply Chain', 'Cost Analysis', 'Business Development'],
   },
   {
     number: '002',
-    title: 'Digital Strategy & Business Systems Lead',
+    title: 'Business Systems Developer',
     company: 'Yee Eyelashes Studio',
     category: 'Business Systems',
     year: '2026',
     description:
-      'Designed and built a full-stack bilingual booking and CRM platform from scratch. Integrated Square POS for payment automation and Twilio SMS for client communication, and developed analytics dashboards tracking retention, booking conversion, and overall business performance. Also implemented SEO and workflow automation to drive organic visibility.',
-    outcomes: ['Bilingual booking + CRM live', 'Square POS & Twilio SMS integrated', 'Analytics dashboards deployed'],
-    tags: ['CRM', 'Business Systems', 'Analytics', 'SEO'],
+      'Architected a full-stack bilingual CRM, booking, and loyalty platform from zero — then wired it to real money. Live Square POS and Twilio integrations automate payments and customer engagement. A tiered membership engine drives retention. Analytics dashboards show exactly what\'s working. Built to run a real business, not a demo.',
+    outcomes: ['Full-stack bilingual CRM live', 'Real-time POS + SMS automation', 'Tiered loyalty system deployed'],
+    tags: ['CRM', 'Business Systems', 'Automation', 'SEO'],
   },
   {
     number: '003',
@@ -47,8 +47,8 @@ const projects = [
     category: 'Analytics',
     year: '2022–23',
     description:
-      'Built Power BI dashboards to monitor order accuracy and fulfillment KPIs across global sales channels, reducing processing errors by 43% and improving fulfillment efficiency by 15%. Operated SAP ERP for order management and coordinated across sales, planning, and logistics teams to close operational gaps.',
-    outcomes: ['43% reduction in processing errors', '15% fulfillment efficiency gain', 'Real-time SAP-linked KPI monitoring'],
+      'Built Power BI dashboards that didn\'t just visualize data — they changed behavior. Processing errors dropped 43%. Fulfillment efficiency climbed 15%. Operating SAP ERP across multi-channel order flows, I sat at the intersection of data, operations, and the people who needed both to make decisions.',
+    outcomes: ['43% processing error reduction', '15% fulfillment efficiency gain', 'Multi-channel SAP order visibility'],
     tags: ['Power BI', 'SAP ERP', 'Data Analytics'],
   },
   {
@@ -58,8 +58,8 @@ const projects = [
     category: 'Procurement',
     year: '2025',
     description:
-      'Built a structured supplier evaluation program for a functional beverage new product initiative. Assessed vendors across cost, MOQ, regulatory compliance, and lead time — creating decision-support tools that brought rigor to an unstructured sourcing process.',
-    outcomes: ['Evaluation framework built from scratch', 'Multi-vendor benchmarking', 'Data-driven sourcing decisions'],
+      'When the team needed a supplier for a new functional beverage product, there was no process. I built one — benchmarking vendors across cost, MOQ, regulatory compliance, and lead time, and creating structured evaluation tools that turned a messy decision into a documented, defensible one.',
+    outcomes: ['Sourcing framework built from scratch', 'Multi-vendor cost & compliance matrix', 'Data-driven vendor selection'],
     tags: ['Sourcing', 'Feasibility', 'Procurement'],
   },
 ];
@@ -90,7 +90,7 @@ export default function Work() {
               className="font-display font-light text-cream leading-tight lg:whitespace-nowrap"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
             >
-              Work that <em className="text-gold-gradient">made a difference.</em>
+              Results, not <em className="text-gold-gradient">just experience.</em>
             </h2>
           </Reveal>
         </div>

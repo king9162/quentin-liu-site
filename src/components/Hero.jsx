@@ -32,7 +32,7 @@ export default function Hero() {
       <motion.div style={{ y: yText, opacity }} className="relative z-10 text-center px-6 w-full max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.5 }} className="flex items-center justify-center gap-4 mb-10">
           <div className="h-px w-12 bg-gold opacity-60" />
-          <span className="font-mono text-[10px] tracking-widest3 uppercase text-gold">Business Analyst · Business Systems · Data Analytics · Supply Chain</span>
+          <span className="font-mono text-[10px] tracking-widest3 uppercase text-gold">Business Development · Business Systems · Data Analytics · Supply Chain</span>
           <div className="h-px w-12 bg-gold opacity-60" />
         </motion.div>
 
@@ -50,9 +50,9 @@ export default function Hero() {
         </div>
 
         <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 0.9 }} className="font-body font-light text-ink-200 mb-14 max-w-2xl mx-auto" style={{ fontSize: '1.05rem', lineHeight: 1.75 }}>
-          Where supply chain strategy meets business systems execution.
+          I don't just analyze operations — I build the systems that fix them.
           <br />
-          Turning operational complexity into clear, data-driven decisions.
+          Supply chain strategy, business technology, and results that ship.
         </motion.p>
 
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1], delay: 1.05 }} className="flex items-center justify-center gap-5 flex-wrap">

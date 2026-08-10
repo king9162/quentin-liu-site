@@ -21,11 +21,11 @@ const experiences = [
   {
     index: '01',
     company: 'A.I. Technology, Inc.',
-    role: 'Business Analyst',
+    role: 'Business Development',
     period: 'Jan 2026 · Present',
     location: 'United States & China',
     type: 'Full-time',
-    summary: 'Leading U.S. and China supplier sourcing, landed cost modeling, and executive business analysis.',
+    summary: 'Owning U.S.-China supplier strategy, landed cost modeling, and executive business analysis.',
     points: [
       'Led U.S. and China supplier sourcing and total landed cost analysis',
       'Developed landed cost models and evaluated logistics strategies for executive sourcing decisions',
@@ -37,16 +37,17 @@ const experiences = [
   {
     index: '02',
     company: 'Yee Eyelashes Studio',
-    role: 'Digital Strategy & Business Systems Lead',
+    role: 'Business Systems Developer',
     period: 'Apr 2026 · Present',
     location: 'United States',
     type: 'Project',
-    summary: 'Built a full-stack bilingual CRM and booking platform with integrated POS and SMS automation.',
+    summary: 'Architected a full-stack bilingual CRM, booking platform, and tiered loyalty system from zero.',
     points: [
-      'Built a bilingual booking and CRM platform supporting daily business operations',
-      'Developed analytics dashboards for client retention, booking conversion, and business performance',
-      'Integrated Square POS and Twilio SMS to automate payments and customer communication',
-      'Implemented SEO and workflow automation to improve online visibility and customer engagement',
+      'Built a bilingual booking and CRM platform streamlining end-to-end business operations',
+      'Developed analytics dashboards for customer retention, booking conversion, and business performance',
+      'Engineered real-time Square POS and Twilio integrations to automate payments and customer engagement',
+      'Implemented multilingual SEO and workflow automation to improve online visibility and operational efficiency',
+      'Designed a tiered membership and loyalty CRM to automate rewards, customer retention, and lifecycle engagement',
     ],
   },
   {
@@ -106,7 +107,7 @@ export default function Experience() {
               className="font-display font-light text-cream leading-tight lg:whitespace-nowrap"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
             >
-              Where I've <em className="text-gold-gradient">done the work.</em>
+              Every role, <em className="text-gold-gradient">every outcome.</em>
             </h2>
           </Reveal>
         </div>
