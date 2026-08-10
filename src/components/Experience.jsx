@@ -25,7 +25,7 @@ const experiences = [
     period: 'Jan 2026 · Present',
     location: 'United States & China',
     type: 'Full-time',
-    summary: 'Owning U.S.-China supplier strategy, landed cost modeling, and executive business analysis.',
+    summary: 'U.S.-China supplier sourcing, landed cost modeling, and executive-level business analysis.',
     points: [
       'Led U.S. and China supplier sourcing and total landed cost analysis',
       'Developed landed cost models and evaluated logistics strategies for executive sourcing decisions',
@@ -41,7 +41,7 @@ const experiences = [
     period: 'Apr 2026 · Present',
     location: 'United States',
     type: 'Project',
-    summary: 'Architected a full-stack bilingual CRM, booking platform, and tiered loyalty system from zero.',
+    summary: 'Full-stack bilingual CRM, booking platform, and tiered loyalty system — built end to end.',
     points: [
       'Built a bilingual booking and CRM platform streamlining end-to-end business operations',
       'Developed analytics dashboards for customer retention, booking conversion, and business performance',
@@ -107,7 +107,7 @@ export default function Experience() {
               className="font-display font-light text-cream leading-tight lg:whitespace-nowrap"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
             >
-              Every role, <em className="text-gold-gradient">every outcome.</em>
+              Where I've <em className="text-gold-gradient">done the work.</em>
             </h2>
           </Reveal>
         </div>

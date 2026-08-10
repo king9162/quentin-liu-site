@@ -25,7 +25,7 @@ const projects = [
     category: 'Operations',
     year: '2026',
     description:
-      'Own U.S.-China supplier sourcing end to end — building the landed cost models executives rely on, stress-testing logistics strategies, and delivering the competitive intelligence that shapes where and how the company sources globally. Every recommendation I write has a number behind it.',
+      'Manage U.S.-China supplier sourcing end to end — modeling total landed costs, evaluating logistics strategies, and preparing the business analyses and product comparison reports that inform executive sourcing decisions. Also run market intelligence and competitor research at manufacturing trade shows.',
     outcomes: ['Executive-grade landed cost models', 'U.S.–China dual-market sourcing', 'Trade show competitive intelligence'],
     tags: ['Supply Chain', 'Cost Analysis', 'Business Development'],
   },
@@ -36,7 +36,7 @@ const projects = [
     category: 'Business Systems',
     year: '2026',
     description:
-      'Architected a full-stack bilingual CRM, booking, and loyalty platform from zero — then wired it to real money. Live Square POS and Twilio integrations automate payments and customer engagement. A tiered membership engine drives retention. Analytics dashboards show exactly what\'s working. Built to run a real business, not a demo.',
+      'Designed and built a full-stack bilingual booking and CRM platform, then extended it into a tiered membership and loyalty system. Integrated Square POS and Twilio for real-time payment automation and customer communication. Added analytics dashboards tracking retention and booking conversion, and implemented multilingual SEO to grow organic visibility.',
     outcomes: ['Full-stack bilingual CRM live', 'Real-time POS + SMS automation', 'Tiered loyalty system deployed'],
     tags: ['CRM', 'Business Systems', 'Automation', 'SEO'],
   },
@@ -47,7 +47,7 @@ const projects = [
     category: 'Analytics',
     year: '2022–23',
     description:
-      'Built Power BI dashboards that didn\'t just visualize data — they changed behavior. Processing errors dropped 43%. Fulfillment efficiency climbed 15%. Operating SAP ERP across multi-channel order flows, I sat at the intersection of data, operations, and the people who needed both to make decisions.',
+      'Built Power BI dashboards to monitor order accuracy and fulfillment KPIs across global sales channels, reducing processing errors by 43% and improving fulfillment efficiency by 15%. Worked daily in SAP ERP for order management and collaborated with sales, planning, and logistics teams on operational improvements.',
     outcomes: ['43% processing error reduction', '15% fulfillment efficiency gain', 'Multi-channel SAP order visibility'],
     tags: ['Power BI', 'SAP ERP', 'Data Analytics'],
   },
@@ -58,7 +58,7 @@ const projects = [
     category: 'Procurement',
     year: '2025',
     description:
-      'When the team needed a supplier for a new functional beverage product, there was no process. I built one — benchmarking vendors across cost, MOQ, regulatory compliance, and lead time, and creating structured evaluation tools that turned a messy decision into a documented, defensible one.',
+      'Led supplier sourcing and feasibility analysis for a new functional beverage product line. Evaluated vendors across cost, MOQ, regulatory compliance, and lead time, and built the evaluation tools that structured the sourcing decision from start to finish.',
     outcomes: ['Sourcing framework built from scratch', 'Multi-vendor cost & compliance matrix', 'Data-driven vendor selection'],
     tags: ['Sourcing', 'Feasibility', 'Procurement'],
   },
@@ -90,7 +90,7 @@ export default function Work() {
               className="font-display font-light text-cream leading-tight lg:whitespace-nowrap"
               style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
             >
-              Results, not <em className="text-gold-gradient">just experience.</em>
+              Work that <em className="text-gold-gradient">made a difference.</em>
             </h2>
           </Reveal>
         </div>

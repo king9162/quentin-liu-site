@@ -76,7 +76,7 @@ export default function About() {
             className="font-display font-light text-cream leading-tight mb-16 lg:whitespace-nowrap"
             style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', letterSpacing: '-0.02em' }}
           >
-            Analyst by training. <em className="text-gold-gradient">Builder by instinct.</em>
+            Where supply chain strategy meets <em className="text-gold-gradient">operational execution.</em>
           </h2>
         </Reveal>
 
@@ -85,27 +85,27 @@ export default function About() {
           <div>
             <Reveal delay={0.2}>
               <p className="font-body font-light text-ink-200 leading-relaxed mb-8" style={{ fontSize: '1.05rem' }}>
-                I'm Quentin Liu — a Business Development and Business Systems professional based in
-                Princeton, NJ. I operate where supply chain strategy meets real-world execution,
-                building the tools and making the calls that move businesses forward.
+                I'm Quentin Liu, a business development and operations professional based in Princeton, NJ.
+                My background spans supply chain strategy, data analysis, and business systems — often
+                within the same role.
               </p>
             </Reveal>
 
             <Reveal delay={0.3}>
               <p className="font-body font-light text-ink-300 leading-relaxed mb-10" style={{ fontSize: '0.95rem', lineHeight: 1.85 }}>
-                At A.I. Technology, I own U.S.-China supplier sourcing end to end — modeling landed
-                costs, stress-testing logistics strategies, and preparing the executive analyses that
-                determine where and how we source globally. I'm the person who's both read the data
-                and written the recommendation.
+                At A.I. Technology, I manage U.S.-China supplier sourcing — modeling landed costs,
+                evaluating logistics strategies, and preparing analyses that inform executive sourcing
+                decisions. I also run market intelligence at manufacturing trade shows and work directly
+                with overseas suppliers on new product applications.
               </p>
             </Reveal>
 
             <Reveal delay={0.35}>
               <p className="font-body font-light text-ink-300 leading-relaxed mb-14" style={{ fontSize: '0.95rem', lineHeight: 1.85 }}>
-                In parallel, I architect business systems from scratch — a full-stack bilingual CRM,
-                booking platform, and tiered loyalty system with live Square POS and Twilio integrations.
-                Earlier, my Power BI dashboards at Bosch cut processing errors by 43% and lifted
-                fulfillment efficiency by 15%. I build things that last.
+                Beyond sourcing, I build business systems end to end. Most recently, I developed a
+                full-stack bilingual CRM, booking platform, and loyalty program for Yee Eyelashes Studio,
+                with Square POS and Twilio integrations. At Bosch, my Power BI dashboards reduced order
+                processing errors by 43% and improved fulfillment efficiency by 15%.
               </p>
             </Reveal>
 
