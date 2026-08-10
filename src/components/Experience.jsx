@@ -95,7 +95,7 @@ export default function Experience() {
         {/* Section label */}
         <Reveal>
           <div className="flex items-center gap-4 mb-20">
-            <span className="font-mono text-[9px] tracking-widest3 uppercase text-gold">02 ·Experience</span>
+            <span className="font-mono text-[9px] tracking-widest3 uppercase text-gold">02 — Experience</span>
             <div className="h-px flex-1 max-w-[60px] bg-gold opacity-30" />
           </div>
         </Reveal>

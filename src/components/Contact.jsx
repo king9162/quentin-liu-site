@@ -18,8 +18,9 @@ function Reveal({ children, delay = 0, className = '' }) {
 }
 
 const contactLinks = [
+  { label: 'Email', value: '0906yuliang@gmail.com', href: 'mailto:0906yuliang@gmail.com' },
   { label: 'LinkedIn', value: '/in/quentin-liu', href: 'https://www.linkedin.com/in/quentin-liu/' },
-  { label: 'Location', value: 'New Jersey, United States', href: null },
+  { label: 'Location', value: 'Princeton, NJ — Open to relocation', href: null },
 ];
 
 export default function Contact() {
@@ -54,7 +55,7 @@ export default function Contact() {
 
         <Reveal delay={0.15}>
           <p className="font-body font-light text-ink-300 text-base leading-relaxed mb-20 max-w-lg">
-            Open to new roles and good conversations. Feel free to reach out.
+            Open to full-time roles in business development, operations, and analytics. Feel free to reach out.
           </p>
         </Reveal>
 
